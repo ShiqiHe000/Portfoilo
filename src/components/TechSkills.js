@@ -2,7 +2,10 @@ import React, { useEffect } from "react";
 import styles from "../scss/_TechSkills.module.scss";
 import { ReactComponent as FrontEndImg } from "../imgs/front-end.svg";
 import { ReactComponent as BackEndImg } from "../imgs/back-end-purple.svg";
-import { techSkillAnimation } from "./Animations";
+import {
+    techSkillAnimation,
+    techSkillAnimationSmallScreen,
+} from "./Animations";
 import { breakLarge } from "../variables/variables";
 
 const TechSkills = () => {
@@ -11,6 +14,12 @@ const TechSkills = () => {
 
         if (windowWidth > breakLarge) {
             techSkillAnimation(
+                "[data-tech-title-anim]",
+                "[data-tech-card1-anim]",
+                "[data-tech-card2-anim]"
+            );
+        } else {
+            techSkillAnimationSmallScreen(
                 "[data-tech-title-anim]",
                 "[data-tech-card1-anim]",
                 "[data-tech-card2-anim]"

@@ -1,17 +1,27 @@
 import React, { useEffect } from "react";
 import styles from "../scss/_SoftSkills.module.scss";
 import { ReactComponent as SpeakSvg } from "../imgs/speak.svg";
-import { softSkillAnimation } from "./Animations";
-import { breakLarge } from "../variables/variables";
+import {
+    softSkillAnimation,
+    softSkillAnimationSmallScreen,
+} from "./Animations";
+import { breakXSmall } from "../variables/variables";
 
 const SoftSkills = () => {
     useEffect(() => {
         const screenWidth = window.screen.width;
 
-        if (screenWidth > breakLarge) {
+        if (screenWidth > breakXSmall) {
             softSkillAnimation(
                 "[data-soft-skill-title]",
                 "[data-soft-skill-card]"
+            );
+        } else {
+
+            const cards = document.querySelectorAll('[data-soft-skill-card]');
+            softSkillAnimationSmallScreen(
+                "[data-soft-skill-title]",
+                cards
             );
         }
     }, []);

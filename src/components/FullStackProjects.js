@@ -8,11 +8,16 @@ import {projectsAnimation} from './Animations';
 
 const FullStackProjects = () => {
     useEffect(() => {
-        const screenWidth = window.screen.width;
+        // const screenWidth = window.screen.width;
+        let screenWidth = window.matchMedia(`(min-width: ${breakLarge.toString()}px)`);
+        const projectCards = document.querySelectorAll('[data-project-card]');
 
-        if (screenWidth > breakLarge) {
-            projectsAnimation('[data-project-titles]', '[data-project-card]')
-        }
+        // if (screenWidth > breakLarge) {
+            projectsAnimation('[data-project-titles]', projectCards, screenWidth);
+            screenWidth.addEventListener('change', () => {
+                projectsAnimation('[data-project-titles]', projectCards, screenWidth);
+            })
+        // }
     }, []);
 
 

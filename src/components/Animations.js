@@ -73,7 +73,7 @@ export const techSkillAnimation = (titles, card1, card2) => {
         y: -15,
         duration: cardMoveTime,
         ease: "power4.out",
-        delay: .5
+        delay: 0.5,
     };
 
     gsap.timeline({
@@ -90,75 +90,155 @@ export const techSkillAnimation = (titles, card1, card2) => {
         .to(card2, { ...cardMove, y: 15 }, "start");
 };
 
-
-export const softSkillAnimation  = (title, cards) => {
+export const techSkillAnimationSmallScreen = (titles, card1, card2) => {
     gsap.registerPlugin(ScrollTrigger);
 
     const tl = gsap.timeline({
         scrollTrigger: {
-            trigger: title, 
-            start: "top center"
-        }
-    })
+            trigger: titles,
+            start: "bottom center",
+        },
+    });
 
-    tl.from(title, {
-        duration: 1, 
-        opacity: 0
-    })
+    tl.from(titles, titleFadeIn);
 
-    tl.from(cards, {
-        duration: 1, 
-        ease: "power3.out", 
-        opacity: 0, 
-        stagger: .2, 
-        scale: .5
-    })
-}
+    tl.from(card1, {
+        xPercent: -100,
+        duration: 1.5,
+        ease: "bounce.out",
+    });
 
-export const projectsAnimation = (titles, cards) => {
+    const tlCard2 = gsap.timeline({
+        scrollTrigger: {
+            trigger: card2,
+            start: "top center",
+        },
+    });
 
+    tlCard2.from(card2, {
+        xPercent: 100,
+        duration: 1.5,
+        ease: "bounce.out",
+    });
+};
+
+export const softSkillAnimation = (title, cards) => {
     gsap.registerPlugin(ScrollTrigger);
 
     const tl = gsap.timeline({
         scrollTrigger: {
-            start: "bottom center", 
-            trigger: titles
-        }
-    })
+            trigger: title,
+            start: "top center",
+        },
+    });
 
-    tl.from(titles, {
-        duration: 1, 
-        opacity: 0
-    })
+    tl.from(title, titleFadeIn);
 
     tl.from(cards, {
-        duration: 1.5, 
-        xPercent: 100, 
-        ease: "bounce.out", 
-        stagger: .5
-    })
-}
+        duration: 1,
+        ease: "power3.out",
+        opacity: 0,
+        stagger: 0.2,
+        scale: 0.5,
+    });
+};
+
+export const softSkillAnimationSmallScreen = (title, cards) => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from(title, {
+        scrollTrigger: {
+            start: "top center",
+            trigger: title,
+        },
+        ...titleFadeIn,
+    });
+
+    cards.forEach((card) => {
+        gsap.from(card, {
+            scrollTrigger: {
+                start: "top center",
+                trigger: card,
+            },
+            duration: 1,
+            ease: "back.out(1.7)",
+            xPercent: -100,
+        });
+    });
+};
+
+export const projectsAnimation = (titles, cards, screen) => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from(titles, {
+        scrollTrigger: {
+            start: titles,
+            trigger: "top center",
+        },
+        ...titleFadeIn,
+    });
+
+    // large screen
+    if (screen.matches) {
+        cards.forEach((card) => {
+            gsap.fromTo(
+                card,
+                {
+                    xPercent: 100,
+                },
+                {
+                    scrollTrigger: {
+                        trigger: card,
+                        start: "top center",
+                    },
+                    duration: 1.5,
+                    ease: "bounce.out",
+                    xPercent: 10,
+                }
+            );
+        });
+    } else {
+        // small screen
+        cards.forEach((card) => {
+            gsap.fromTo(
+                card,
+                {
+                    xPercent: 100,
+                },
+                {
+                    scrollTrigger: {
+                        trigger: card,
+                        start: "top center",
+                    },
+                    duration: 1.5,
+                    ease: "bounce.out",
+                    xPercent: 0,
+                }
+            );
+        });
+    }
+};
 
 export const contactAnimation = (titles, card) => {
     gsap.registerPlugin(ScrollTrigger);
 
     const tl = gsap.timeline({
         scrollTrigger: {
-            start: "bottom center", 
-            trigger: titles
-        }
-    })
+            start: "bottom center",
+            trigger: titles,
+        },
+    });
 
     tl.from(titles, {
-        opacity: 0, 
-        duration: 1, 
-        stagger: .2
-    })
+        opacity: 0,
+        duration: 1,
+        stagger: 0.2,
+    });
 
     tl.from(card, {
-        opacity: 0, 
-        duration: 1.5, 
-        ease: "back.out(1.7)", 
-        scale: .5
-    })
-}
+        opacity: 0,
+        duration: 1.5,
+        ease: "back.out(1.7)",
+        scale: 0.5,
+    });
+};

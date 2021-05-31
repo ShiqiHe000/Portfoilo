@@ -25,7 +25,7 @@ const Contact = () => {
                 <div>
                     <div className={styles.greeting}>
                         Don't be Shy, Say Hello!
-                        <div className={styles.email}>shiqihe748@gmail.com</div>
+                        <div className={styles.email}>heshiqi748@gmail.com</div>
                     </div>
                     <ul>
                         <li>
