@@ -1,0 +1,29 @@
+@import "./variables";
+
+$arrow-height: 24px;
+
+.scrollBtn {
+    cursor: pointer;
+    background-color: $clr-accent-pink;
+    padding: 0.5rem;
+    border-radius: 50%;
+    position: fixed;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    bottom: 0;
+    right: 0;
+    display: none;
+    z-index: 100;
+
+    .upArrow {
+        transition: transform 0.2s ease-out;
+    }
+
+    &:hover .upArrow {
+        transform: scale(1.1);
+    }
+}
+
+.visiable{
+    display: block;
+}

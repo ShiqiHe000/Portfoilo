@@ -1,0 +1,29 @@
+@import "./variables";
+
+$transition-time: 0.2s;
+
+.btn {
+    outline: none;
+    background: none;
+    padding: 1rem 3rem;
+    font-size: $font-weight-bold;
+    border-radius: 10px;
+    border: none;
+    display: inline-block;
+}
+
+.btnPrimary {
+    color: black;
+    background-color: $clr-accent-pink;
+
+    transition: background-color $transition-time ease-out,
+        box-shadow $transition-time ease-out;
+
+    &:hover {
+        background-color: darken($color: $clr-accent-pink, $amount: 10%);
+    }
+
+    &:active {
+        box-shadow: 0 0 0 0.25rem rgba($color: $clr-accent-pink, $alpha: 0.8);
+    }
+}
