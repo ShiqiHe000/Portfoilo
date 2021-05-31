@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { ReactComponent as UpwardArrow } from "../imgs/arrow_upward.svg";
 import styles from "../scss/_ScrollButton.module.scss";
 import btn from "../scss/_button.module.scss";
+// import { gsap } from "gsap";
+
 
 const ScrollButton = () => {
     const [visiable, setVisible] = useState(false);

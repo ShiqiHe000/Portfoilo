@@ -24,6 +24,25 @@ $arrow-height: 24px;
     }
 }
 
-.visiable{
+.visiable {
     display: block;
+    animation: buttonPopUp 1s ease-out forwards;
+    &:hover {
+        opacity: 1;
+        animation-fill-mode: none;
+    }
+}
+
+@keyframes buttonPopUp {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: .8;
+        transform: scale(1);
+    }
 }
