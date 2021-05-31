@@ -1,0 +1,48 @@
+@import "./variables";
+
+.preload {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $clr-bg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+
+    font-size: 1.5rem;
+    // font-family: 'Monoton', cursive;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: $clr-accent-pink;
+
+    transition: opacity 1s ease-in-out;
+
+    &::after {
+        content: "\2026";
+        display: inline-block;
+        overflow: hidden;
+        animation: dots steps(4, end) 2s infinite;
+        width: 0;
+        margin-left: 0.5rem;
+    }
+}
+
+.preloadFinished {
+    opacity: 0;
+    pointer-events: none;
+}
+
+@media screen and (min-width: $break-large) {
+    .preload {
+        font-size: 3rem;
+    }
+}
+
+@keyframes dots {
+    to {
+        width: .9em;
+    }
+}

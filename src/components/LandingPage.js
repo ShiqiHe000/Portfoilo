@@ -1,10 +1,9 @@
 import React, { useEffect } from "react";
 import styles from "../scss/_LandingPage.module.scss";
 import btn from "../scss/_button.module.scss";
-import {landingPage} from './Animations';
+import { landingPage } from "./Animations";
 
 const LandingPage = () => {
-
     useEffect(() => {
         landingPage();
     }, []);
@@ -24,8 +23,7 @@ const LandingPage = () => {
             <a
                 href="#contact"
                 className={`${btn.btn} ${btn.btnPrimary} ${styles.hireMeButton} scaleIn`}
-                data-amplify-btn
-                >
+                data-amplify-btn>
                 Hire Me
             </a>
         </div>

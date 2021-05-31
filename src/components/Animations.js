@@ -7,6 +7,7 @@ const titleFadeIn = {
     stagger: 0.3,
 };
 
+
 // landing page animation
 export const landingPage = () => {
     const tl = gsap.timeline();
