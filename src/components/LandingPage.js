@@ -15,10 +15,9 @@ const LandingPage = () => {
                 Full Stack Developer
             </h1>
             <p className={`${styles.description} fadeIn`}>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Expedita nobis quo alias ratione doloremque. Aspernatur magnam
-                repellendus ea omnis, perspiciatis ut, ducimus ad numquam
-                deserunt facere id. Nemo, quidem eius?
+                Hello! I am Shiqi, who is passionate about web development. I
+                would like to offer my expertise to help your company grow. If
+                you are interested in me, please feel free to contact me.
             </p>
             <a
                 href="#contact"

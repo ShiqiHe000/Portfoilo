@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 const titleFadeIn = {
     opacity: 0,
     duration: 1,
-    stagger: 0.3,
+    stagger: .3,
 };
 
 
@@ -168,16 +168,20 @@ export const softSkillAnimationSmallScreen = (title, cards) => {
     });
 };
 
-export const projectsAnimation = (titles, cards, screen) => {
+export const titleAnimation = (titles) => {
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.from(titles, {
         scrollTrigger: {
-            start: titles,
-            trigger: "top center",
+            trigger: titles,
+            start: "top center",
         },
         ...titleFadeIn,
     });
+}
+
+export const projectsAnimation = (cards, screen) => {
+    gsap.registerPlugin(ScrollTrigger);
 
     // large screen
     if (screen.matches) {

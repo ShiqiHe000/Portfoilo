@@ -1,7 +1,13 @@
-import React from "react";
+import React, {useEffect} from "react";
 import FullStackProjects from "./FullStackProjects";
+import { titleAnimation } from "./Animations";
+
 
 const Projects = () => {
+    useEffect(() => {
+        titleAnimation("[data-project-titles]");
+    }, [])
+
     return (
         <div>
             <div className="container">

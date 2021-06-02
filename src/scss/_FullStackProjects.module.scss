@@ -13,7 +13,7 @@ $project-img-large-width: $project-img-large-height / $project-img-ratio;
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     padding: 2rem;
 }
 
@@ -33,10 +33,37 @@ $project-img-large-width: $project-img-large-height / $project-img-ratio;
     color: black;
 }
 
+.card2 {
+    background-color: $clr-accent-yellow;
+    color: black;
+}
+
+
 .title {
     font-size: 1.2rem;
     font-weight: $font-weight-normal;
     letter-spacing: 2px;
+    margin-bottom: 0;
+}
+
+.links {
+    color: $clr-dark-grey;
+    margin-bottom: 1rem;
+    a {
+        text-decoration: none;
+        color: $clr-dark-grey;
+        transition: color 0.2s ease-out;
+
+        &:hover {
+            color: black;
+        }
+    }
+
+    .linkSeparator {
+        display: inline-block;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
 }
 
 .goButton {
@@ -81,6 +108,10 @@ $project-img-large-width: $project-img-large-height / $project-img-ratio;
 .projectDescription {
     font-size: 1rem;
     color: $clr-dark-grey;
+
+    li {
+        margin: 0.5rem 0;
+    }
 }
 
 .projectLink {
@@ -135,6 +166,10 @@ $project-img-large-width: $project-img-large-height / $project-img-ratio;
             height: $project-img-large-height;
             left: 0;
         }
+    }
+
+    .links{
+        margin-bottom: 0;
     }
 
     .cardText {

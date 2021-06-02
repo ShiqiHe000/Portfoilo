@@ -39,9 +39,10 @@ const TechSkills = () => {
                     <FrontEndImg className={styles.skillImg} />
                     <h4 className={styles.title}>Front End</h4>
                     <ul className={styles.skillList}>
-                        <li>Skill 1.</li>
-                        <li>Skill 2.</li>
-                        <li>Skill 3.</li>
+                        <li>Advanced animations with CSS.</li>
+                        <li>DOM manipulation by JavaScript.</li>
+                        <li>Single Page Apps with React.</li>
+                        <li>Responsive design.</li>
                     </ul>
                 </div>
 
@@ -51,9 +52,10 @@ const TechSkills = () => {
                     <BackEndImg className={styles.skillImg} />
                     <h4 className={styles.title}>Back End</h4>
                     <ul className={styles.skillList}>
-                        <li>Skill 1.</li>
-                        <li>Skill 2.</li>
-                        <li>Skill 3.</li>
+                        <li>RESTful Apps.</li>
+                        <li>Client/Server communication.</li>
+                        <li>MVC Architecture.</li>
+                        <li>Application deployment.</li>
                     </ul>
                 </div>
             </div>

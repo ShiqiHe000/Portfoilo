@@ -3,6 +3,8 @@
 $circle-radius: 10px;
 $arrow-height: 30px;
 $arrow-width: 10px;
+$institution-title-width: 300px;
+$institution-title-small-width: 200px;
 
 .eduContainer {
     margin-bottom: 3rem;
@@ -41,6 +43,9 @@ $arrow-width: 10px;
     font-size: 1.2rem;
     cursor: pointer;
     position: relative;
+    max-width: $institution-title-width;
+    text-align: left;
+    text-transform: uppercase;
 
     &:active {
         color: $clr-accent-grey;
@@ -66,6 +71,8 @@ $arrow-width: 10px;
 .eduTime {
     font-size: 0.8rem;
     font-weight: $font-weight-thin;
+    max-width: $institution-title-width;
+    text-align: left;
 }
 
 .arrow {
@@ -124,6 +131,7 @@ $arrow-width: 10px;
         cursor: default;
         grid-column: 1 / 2;
         align-self: flex-end;
+        width: $institution-title-small-width;
 
         &::before{
             content: none;
@@ -137,6 +145,8 @@ $arrow-width: 10px;
     .eduTime {
         grid-column: 1 / 2;
         align-self: flex-start;
+        width: $institution-title-small-width;
+
     }
 
 }
