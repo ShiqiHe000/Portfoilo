@@ -229,7 +229,7 @@ export const contactAnimation = (titles, card) => {
 
     const tl = gsap.timeline({
         scrollTrigger: {
-            start: "bottom center",
+            start: "bottom bottom",
             trigger: titles,
         },
     });
