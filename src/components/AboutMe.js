@@ -6,8 +6,7 @@ import TechSkills from './TechSkills';
 const AboutMe = () => {
     return (
         <div className={`container`}>
-            <a id="aboutMe"></a>
-            <h2 className={`secondaryTitle edu-title`}>About Me</h2>
+            <h2 className={`secondaryTitle edu-title`} id="aboutMe">About Me</h2>
             <Education /> 
             <h2 className="primaryTitle" data-tech-title-anim>My Skills</h2>
             <TechSkills /> 

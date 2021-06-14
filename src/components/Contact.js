@@ -13,8 +13,7 @@ const Contact = () => {
 
     return (
         <div className={`container ${styles.contactContainer}`}>
-            <a id="contact"></a>
-            <h3 className="secondaryTitle" data-contact-title>
+            <h3 id="contact" className="secondaryTitle" data-contact-title>
                 Contact
             </h3>
             <h2 className="primaryTitle" data-contact-title>

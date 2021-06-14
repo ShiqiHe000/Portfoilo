@@ -39,10 +39,11 @@ const TechSkills = () => {
                     <FrontEndImg className={styles.skillImg} />
                     <h4 className={styles.title}>Front End</h4>
                     <ul className={styles.skillList}>
+                        <li>Strong fundamentals in HTML, CSS, and JavaScript (ES6).</li>
+                        <li>Experienced in front-end frameworks: React and Redux.</li>
                         <li>Advanced animations with CSS.</li>
-                        <li>DOM manipulation by JavaScript.</li>
-                        <li>Single Page Apps with React.</li>
-                        <li>Responsive design.</li>
+                        <li>Using Web Dev Tools to debug: Firefox, Chrome, and Redux Dev Tool.</li>
+                        <li>Responsive, mobile-first design.</li>
                     </ul>
                 </div>
 
@@ -52,10 +53,13 @@ const TechSkills = () => {
                     <BackEndImg className={styles.skillImg} />
                     <h4 className={styles.title}>Back End</h4>
                     <ul className={styles.skillList}>
-                        <li>RESTful Apps.</li>
-                        <li>Client/Server communication.</li>
-                        <li>MVC Architecture.</li>
-                        <li>Application deployment.</li>
+                        <li>Solid fundamentals in Node.js, Express.js.</li>
+                        <li>Experienced in building RESTful Apps.</li>
+                        <li>Full-stack Experiences.</li>
+                        <li>HTTP requests handling.</li>
+                        <li>User authentication: JSON Web Token (JWT).</li>
+                        <li>Design pattern: MVC Architecture.</li>
+                        <li>Database: SQL (Postgresql) and Non-SQL (MongoDB).</li>
                     </ul>
                 </div>
             </div>

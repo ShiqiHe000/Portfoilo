@@ -1,8 +1,7 @@
-import React, {useEffect} from "react";
+import React from "react";
 import styles from "../scss/_Navbar.module.scss";
 import { ReactComponent as SheLogo } from "../imgs/logo.svg";
-// import { gsap } from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 
 const Navbar = () => {
 

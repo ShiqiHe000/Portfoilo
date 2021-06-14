@@ -4,7 +4,6 @@ import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import ScrollButton from './components/ScrollButton';
-import Preload from './components/Preload';
 import "./scss/main.scss";
 
 function App() {
