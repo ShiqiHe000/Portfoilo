@@ -20,8 +20,8 @@ const FullStackProjects = () => {
 
     return (
         <>
-            <BookShelf />
             <ShoppingList />
+            <BookShelf />
             <Calculator /> 
         </>
     );

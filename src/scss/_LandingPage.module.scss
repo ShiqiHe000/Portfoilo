@@ -1,5 +1,14 @@
 @import "./variables";
 
+.canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
 .landingContainer {
     margin-top: 3rem;
     margin-bottom: 5rem;
