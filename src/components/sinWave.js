@@ -28,7 +28,15 @@ export default class sinWave {
         this.increment = this.wave.frequency;
 
         // this.setupGUI();
+        this.resizeWindow();
         this.animate();
+    }
+
+    resizeWindow(){
+        window.addEventListener('resize', () => {
+            this.canvas.width = window.innerWidth;
+            this.canvas.height = window.innerHeight;
+        })
     }
 
     //  show control bar on the screen
