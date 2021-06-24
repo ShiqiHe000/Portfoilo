@@ -3,7 +3,7 @@ import { breakLarge } from "../variables/variables";
 import { projectsAnimation } from "./Animations";
 import BookShelf from "./BookShelf";
 import ShoppingList from "./ShoppingList";
-import Calculator from "./Calculator";
+import PyramidLanding from "./PyramidLanding";
 
 const FullStackProjects = () => {
     useEffect(() => {
@@ -22,7 +22,7 @@ const FullStackProjects = () => {
         <>
             <ShoppingList />
             <BookShelf />
-            <Calculator /> 
+            <PyramidLanding /> 
         </>
     );
 };

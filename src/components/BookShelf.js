@@ -26,7 +26,7 @@ const BookShelf = () => {
                             <GoArrow className={styles.arrow} />
                         </div>
                     </a>
-                    <p className={styles.projectDescription}>
+                    <div className={styles.projectDescription}>
                         A book recommendation App to expand your horizon.
                         <ul>
                             <li>
@@ -41,7 +41,7 @@ const BookShelf = () => {
                             <li>Files upload by finepond.</li>
                             <li>Wed hosting: Heroku.</li>
                         </ul>
-                    </p>
+                    </div>
                 </div>
 
                 <a

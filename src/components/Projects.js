@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import FullStackProjects from "./FullStackProjects";
 import { titleAnimation } from "./Animations";
+import OtherProjects from "./OtherProjects";
 
 const Projects = () => {
     useEffect(() => {
@@ -17,10 +18,11 @@ const Projects = () => {
                     Projects
                 </h3>
                 <h2 className="primaryTitle" data-project-titles>
-                    Full Stack
+                    Recent works
                 </h2>
             </div>
             <FullStackProjects />
+            <OtherProjects /> 
         </div>
     );
 };

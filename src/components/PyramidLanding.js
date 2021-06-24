@@ -1,17 +1,19 @@
-import React from "react";
+import React from 'react'
 import styles from "../scss/_FullStackProjects.module.scss";
 import { ReactComponent as GoArrow } from "../imgs/go.svg";
-import shoppingList from "../imgs/shopping-list-small.png";
+import pyramid from "../imgs/pyramid.png";
 
-const ShoppingList = () => {
-    const GIT_URL = "https://github.com/ShiqiHe000/MERN-Stack-Shopping-List";
-    const WEB_URL = "https://mern-shopping-list000.herokuapp.com/";
+const PyramidLanding = () => {
+    const GIT_URL = "https://github.com/ShiqiHe000/3D-pyramid-landing-page";
+    const WEB_URL = "https://objective-morse-8503dc.netlify.app/";
 
     return (
         <div className={`${styles.card} ${styles.card1}`} data-project-card>
             <div className={`${styles.cardLayout}`}>
                 <div className={styles.cardText}>
-                    <h4 className={styles.title}>MERN Stack Shopping List</h4>
+                    <h4 className={styles.title}>
+                        Cool 3D Pyramid Landing Page
+                    </h4>
                     <div className={styles.links}>
                         <a href={GIT_URL}>GitHub</a>
                         <span className={styles.linkSeparator}>|</span>
@@ -27,32 +29,25 @@ const ShoppingList = () => {
                         </div>
                     </a>
                     <div className={styles.projectDescription}>
-                        Full stack shopping list API using MongoDB, Express,
-                        React, Node (MERN).
+                        A 3D pyramid effect landing page.
                         <ul>
-                            <li>Front-end states management: React Hooks + Redux.</li>
-                            <li>Framework for UI styling: reactstrap.</li>
-                            <li>Back-end: Node.js and Express.</li>
-                            <li>
-                                RESTful API: using HTTP requests to communicate
-                                with the database (GET, POST, PUT, DELETE).
-                            </li>
-                            <li>User Authentication: JSON Web Token (JWT).</li>
-                            <li>Full stack development + deployment.</li>
+                            <li>3D effect with Three.js.</li>
+                            <li>Mouse move interaction.</li>
+                            <li>GSAP animations.</li>
                         </ul>
                     </div>
                 </div>
 
                 <a href={WEB_URL} className={styles.projectLink}>
                     <img
-                        src={shoppingList}
-                        alt="Shopping list App"
+                        src={pyramid}
+                        alt="3D pramid landing page"
                         className={styles.projectImg}
                     />
                 </a>
             </div>
         </div>
     );
-};
+}
 
-export default ShoppingList;
+export default PyramidLanding

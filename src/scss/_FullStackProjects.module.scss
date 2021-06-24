@@ -44,6 +44,7 @@ $project-img-large-width: $project-img-large-height / $project-img-ratio;
     font-weight: $font-weight-normal;
     letter-spacing: 2px;
     margin-bottom: 0;
+    text-align: center;
 }
 
 .links {
@@ -108,6 +109,7 @@ $project-img-large-width: $project-img-large-height / $project-img-ratio;
 .projectDescription {
     font-size: 1rem;
     color: $clr-dark-grey;
+    margin-top: 1rem;
 
     li {
         margin: 0.5rem 0;
@@ -140,6 +142,10 @@ $project-img-large-width: $project-img-large-height / $project-img-ratio;
 }
 
 @media screen and (min-width: $break-large) {
+    .title{
+        text-align: left;
+    }
+
     .card {
         border-top-left-radius: $border-radius-general;
         border-bottom-left-radius: $border-radius-general;

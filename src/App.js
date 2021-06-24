@@ -9,7 +9,6 @@ import "./scss/main.scss";
 function App() {
   return (
     <div className="container-fluid">
-      {/* <Preload />  */}
       <ScrollButton /> 
       <Navbar /> 
       <LandingPage /> 
