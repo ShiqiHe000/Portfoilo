@@ -13,6 +13,7 @@ UI Design + React Front End + GSAP Animations.
 * CSS Animations. 
 * Mobile first design pattern. 
 * GSAP: Page scrolling animations. 
+* HTML5 Canvas: background animation. 
 
 ## Have a Look
-[Check out here](https://shiqi-portfolio.herokuapp.com/). 
+[Check out here](https://elegant-ramanujan-971a88.netlify.app/). 
