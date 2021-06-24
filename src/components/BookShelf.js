@@ -27,7 +27,7 @@ const BookShelf = () => {
                         </div>
                     </a>
                     <div className={styles.projectDescription}>
-                        A book recommendation App to expand your horizon.
+                        A <strong>full stack </strong> book recommendation App to expand your horizon.
                         <ul>
                             <li>
                                 Using the Model-View-Controller design pattern.

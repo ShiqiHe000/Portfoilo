@@ -27,7 +27,7 @@ const ShoppingList = () => {
                         </div>
                     </a>
                     <div className={styles.projectDescription}>
-                        Full stack shopping list API using MongoDB, Express,
+                        A <strong>Full stack</strong> shopping list API using MongoDB, Express,
                         React, Node (MERN).
                         <ul>
                             <li>Front-end states management: React Hooks + Redux.</li>
