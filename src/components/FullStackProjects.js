@@ -4,6 +4,7 @@ import { projectsAnimation } from "./Animations";
 import BookShelf from "./BookShelf";
 import ShoppingList from "./ShoppingList";
 import PyramidLanding from "./PyramidLanding";
+import SoapShop from "./SoapShop";
 
 const FullStackProjects = () => {
     useEffect(() => {
@@ -21,6 +22,7 @@ const FullStackProjects = () => {
     return (
         <>
             <ShoppingList />
+            <SoapShop /> 
             <BookShelf />
             <PyramidLanding /> 
         </>
